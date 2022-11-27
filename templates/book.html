@@ -1,0 +1,32 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="navLink"><a href="/library">Back to Library</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+<div class="book-container">
+    <div class ="chosen book">
+        <p>{{ book.title }}</p>
+        <p>{{ book.author }}</p>
+        <p>{{ book.genre }}</p>
+        <p>{{ book.description }}</p>
+
+        {% if book.checked_out %}
+        <p><i> Book Unavailable</i></p>   
+        {% else %}
+        <p><i> Book Available!</i></p>  
+        {% endif %}
+
+        </form>
+    </div>
+</div>
+
+</html>
